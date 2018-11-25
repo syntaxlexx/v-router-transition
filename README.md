@@ -66,3 +66,14 @@ Laravel/Blade/Vue.js
     <router-view></router-view>
 </transition-page>
 ```
+
+## Contribution
+The package has been kept as simple as possible to offer a starting point for your next project. We are looking for more
+css page transitions and we would be more than grateful to receive your pull-requests. You can also share a gist containing
+the css transition for us to add.
+
+Cheers!
+
+## Credits
+- [Lexx YungCarter](https://github.com/lexxyungcarter)
+- [maoberlehner](https://github.com/maoberlehner/vue-router-page-transitions)
