@@ -1,33 +1,54 @@
 {
-  "name": "vue-router-transitions",
+  "name": "vue-router-transition",
   "version": "0.0.1",
   "description": "Get awesome vue-router page transitions for your application",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lexxyungcarter/vue-router-transitions.git"
-  },
-  "keywords": [
-    "vue-router",
-    "transitions",
-    "laravel",
-    "blade"
-  ],
   "author": "Lexx YungCarter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lexxyungcarter/vue-router-transitions/issues"
+    "url": "https://github.com/lexxyungcarter/vue-router-transition/issues"
   },
-  "homepage": "https://github.com/lexxyungcarter/vue-router-transitions#readme",
+  "homepage": "https://github.com/lexxyungcarter/vue-router-transition#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexxyungcarter/vue-router-transition.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue-router",
+    "transitions",
+    "laravel",
+    "blade",
+    "lexx",
+    "yungcarter"
+  ],
   "deprecated": false,
+  "bundleDependencies": false,
   "dependencies": {
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "vue-router": "^2.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
     "babel-plugin-transform-runtime": "^6.0.0",
     "babel-preset-es2015": "^6.0.0",
-    "babel-preset-stage-2": "^6.0.0"
+    "babel-preset-stage-2": "^6.0.0",
+    "babel-runtime": "^6.9.2",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "vue": "^2.2.1",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^11.1.4",
+    "vue-router": "^2.2.1",
+    "vue-style-loader": "^2.0.3",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "1.13.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "main": "dist/vue-router-transition.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js"
   }
 }

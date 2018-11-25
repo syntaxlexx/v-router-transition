@@ -23,6 +23,8 @@ enter this below the <router-link></router-link>
 <script>
 
     export default {
+        name: 'VueRouterTransition',
+
         props: {
             transition: {
                 type: String,
@@ -33,8 +35,6 @@ enter this below the <router-link></router-link>
                 default: 'out-in'
             }
         },
-
-        name: 'TransitionPage',
 
         data() {
             return {
@@ -93,7 +93,7 @@ enter this below the <router-link></router-link>
     };
 </script>
 
-<style lang="scss">
+<style lang="css">
     .fade-enter-active,
     .fade-leave-active {
         transition-duration: 0.3s;

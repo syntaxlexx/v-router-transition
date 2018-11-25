@@ -1,8 +1,8 @@
-# vue-router-transitions
+# vue-router-transition
 A vue 2 awesome vue-router page transitions for your application
 
 ## Install
-`npm install vue-router-transitions`
+`npm install vue-router-transition`
 
 ## Options (Props)
 
@@ -19,7 +19,7 @@ e.t.c.
 
 # Usage
 ## Method 1
-* In your code, just below the `<router-link></router-link>` just import it like so : `import TransitionPage from 'vue-router-transitions';`
+* In your code, just below the `<router-link></router-link>` just import it like so : `import TransitionPage from 'vue-router-transition';`
 
 ```js
 <transition-page transition="slide">

@@ -1,7 +1,7 @@
-import TransitionPage from './TransitionPage.vue';
+import VueRouterTransition from './RouterTransition.vue';
 
 module.exports = {
     install: function (Vue, options) {
-        Vue.component('transition-page', TransitionPage);
+        Vue.component('vue-router-transition', VueRouterTransition);
     }
 };
