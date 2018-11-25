@@ -1,7 +1,7 @@
-import VueRouterTransition from './RouterTransition.vue';
+import VRouterTransition from './RouterTransition.vue';
 
 module.exports = {
     install: function (Vue, options) {
-        Vue.component('vue-router-transition', VueRouterTransition);
+        Vue.component('v-router-transition', VRouterTransition);
     }
 };

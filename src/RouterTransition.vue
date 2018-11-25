@@ -23,8 +23,6 @@ enter this below the <router-link></router-link>
 <script>
 
     export default {
-        name: 'VueRouterTransition',
-
         props: {
             transition: {
                 type: String,

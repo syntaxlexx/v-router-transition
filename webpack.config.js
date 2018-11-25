@@ -43,17 +43,17 @@ module.exports = [
     merge(config, {
         entry: path.resolve(__dirname + '/src/plugin.js'),
         output: {
-            filename: 'vue-router-transition.min.js',
+            filename: 'v-router-transition.min.js',
             libraryTarget: 'window',
-            library: 'VueRouterTransition',
+            library: 'VRouterTransition',
         }
     }),
     merge(config, {
         entry: path.resolve(__dirname + '/src/RouterTransition.vue'),
         output: {
-            filename: 'vue-router-transition.js',
+            filename: 'v-router-transition.js',
             libraryTarget: 'umd',
-            library: 'vue-router-transition',
+            library: 'v-router-transition',
             umdNamedDefine: true
         }
     })

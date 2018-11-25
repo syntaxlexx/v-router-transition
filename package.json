@@ -1,16 +1,16 @@
 {
-  "name": "vue-router-transition",
-  "version": "0.0.1",
+  "name": "v-router-transition",
+  "version": "0.0.4",
   "description": "Get awesome vue-router page transitions for your application",
   "author": "Lexx YungCarter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lexxyungcarter/vue-router-transition/issues"
+    "url": "https://github.com/lexxyungcarter/v-router-transition/issues"
   },
-  "homepage": "https://github.com/lexxyungcarter/vue-router-transition#readme",
+  "homepage": "https://github.com/lexxyungcarter/v-router-transition#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lexxyungcarter/vue-router-transition.git"
+    "url": "git+https://github.com/lexxyungcarter/v-router-transition.git"
   },
   "keywords": [
     "vuejs",
@@ -47,7 +47,7 @@
     "webpack": "1.13.1",
     "webpack-merge": "^4.1.0"
   },
-  "main": "dist/vue-router-transition.js",
+  "main": "dist/v-router-transition.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.js"
   }

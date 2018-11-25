@@ -1,8 +1,8 @@
-# vue-router-transition
-A vue 2 awesome vue-router page transitions for your application
+# v-router-transition
+A vue ^2.2.0 awesome vue-router page transitions for your application
 
 ## Install
-`npm install vue-router-transition`
+`npm install v-router-transition`
 
 ## Options (Props)
 
@@ -18,25 +18,50 @@ A vue 2 awesome vue-router page transitions for your application
 e.t.c.
 
 # Usage
-## Method 1
-* In your code, just below the `<router-link></router-link>` just import it like so : `import TransitionPage from 'vue-router-transition';`
+You can either choose to import the component globally or inside a certain component.
 
+### Globally
+Define a `Vue.component()` inside your **app.js/main.js**
 ```js
-<transition-page transition="slide">
-    <router-view></router-view>
-</transition-page>
+Vue.component('v-router-transition', require('v-router-transition'));
 ```
 
-* You can also add it to your component as components. If you want it globally available
-you can just to this : `Vue.component('transition-page', TransitionPage);`
-* Check the [examples](#examples) on how to use it in your template
+then you can use the component anywhere you choose. Check out the [examples](#examples) for demo usage.
+
+### Locally
+Import and include it in the component's `components` property.
+```js
+// navigation.vue
+
+`import VRouterTransition from 'v-router-transition';`
+
+export default {
+    components: {
+        VRouterTransition
+    },
+
+    ...
+}
+
+```
+
+After declaring the component, you should use the component below the
+`<router-view></router-view>` in your components.
+
+```js
+<v-router-transition transition="slide">
+    <router-view></router-view>
+</v-router-transition>
+```
+
+> Check the [examples](#examples) on how to use it in your template
 
 # Examples
 Using the default options, you just need to pass an id and a model
 ```
-<transition-page transition="sliding" mode="in-out">
+<v-router-transition transition="sliding" mode="in-out">
     <router-view></router-view>
-</transition-page>
+</v-router-transition>
 ```
 
 Laravel/Blade/Vue.js
@@ -62,9 +87,9 @@ Laravel/Blade/Vue.js
 
 @include('layouts.partials.sidebar')
 
-<transition-page transition="slide">
+<v-router-transition transition="slide">
     <router-view></router-view>
-</transition-page>
+</v-router-transition>
 ```
 
 ## Contribution
@@ -77,3 +102,6 @@ Cheers!
 ## Credits
 - [Lexx YungCarter](https://github.com/lexxyungcarter)
 - [maoberlehner](https://github.com/maoberlehner/vue-router-page-transitions)
+
+## Licence
+- MIT
