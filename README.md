@@ -1,6 +1,6 @@
 # v-router-transition
 
-[![Node version](https://img.shields.io/node/v/[v-router-transition].svg?style=flat)](http://nodejs.org/download/)
+[![npm version](https://badge.fury.io/js/v-router-transition.svg)](https://badge.fury.io/js/v-router-transition)
 
 A vue ^2.2.0 awesome vue-router page transitions for your application
 
