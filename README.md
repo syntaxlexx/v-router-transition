@@ -1,4 +1,7 @@
 # v-router-transition
+
+[![Node version](https://img.shields.io/node/v/[v-router-transition].svg?style=flat)](http://nodejs.org/download/)
+
 A vue ^2.2.0 awesome vue-router page transitions for your application
 
 ## Install
