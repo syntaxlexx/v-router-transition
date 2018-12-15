@@ -2,7 +2,11 @@
 A vue ^2.2.0 awesome vue-router page transitions for your application
 
 ## Install
-`npm install v-router-transition`
+`npm install v-router-transition --save`
+
+OR
+
+`yarn add v-router-transition`
 
 ## Options (Props)
 
