@@ -17,6 +17,7 @@ OR
 - fade (default)
 - slide
 - sliding
+- fade-transform
 
 ### mode
 - out-in (default)

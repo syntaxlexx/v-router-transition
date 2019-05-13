@@ -5,6 +5,9 @@ enter this below the <router-link></router-link>
 <transition-page transition="slide">
     <router-view></router-view>
 </transition-page>
+
+Transitions: slide, fade, fade-transform
+fade-transform is good when used with mode="out-in"
 -->
 
 <template>
@@ -158,5 +161,19 @@ enter this below the <router-link></router-link>
         opacity: 0;
         -webkit-transform: translate(-30px, 0);
         transform: translate(-30px, 0);
+    }
+
+    .fade-transform-enter-active,.fade-transform-leave-active{
+        transition:all .5s
+    }
+    .fade-transform-enter{
+        opacity:0;
+        -webkit-transform:translateX(-30px);
+        transform:translateX(-30px)
+    }
+    .fade-transform-leave-to{
+        opacity:0;
+        -webkit-transform:translateX(30px);
+        transform:translateX(30px)
     }
 </style>
