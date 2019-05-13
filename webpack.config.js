@@ -1,39 +1,58 @@
 const webpack = require('webpack');
 const path = require('path');
 const merge = require('webpack-merge');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 var config = {
     output: {
         path: path.resolve(__dirname + '/dist/'),
     },
+    optimization: {
+        minimizer: [
+          new UglifyJsPlugin({
+            sourceMap: false,
+            parallel: 4,
+            uglifyOptions: {
+              warnings: false,
+              compress: {
+                warnings: false,
+                comments: false
+              },
+            },
+          })
+        ],
+    },
     module: {
-        loaders: [
+        rules: [
+            {
+              test: /\.vue$/,
+              loader: 'vue-loader',
+              options: {
+                loaders: {
+                  'scss': 'vue-style-loader!css-loader!sass-loader'
+                }
+                // other vue-loader options go here
+              },
+            },
+            {
+            test: /\.css$/,
+                loader: 'vue-style-loader!css-loader'
+            },
             {
                 test: /\.js$/,
-                loader: 'babel',
-                include: __dirname,
+                loader: 'babel-loader',
                 exclude: /node_modules/
-            },
-            {
-                test: /\.vue$/,
-                loader: 'vue',
-            },
-            {
-                test: /\.css$/,
-                loader: [
-                    'vue-style-loader',
-                    'css-loader'
-                ]
             },
         ]
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: true,
-            sourceMap: false,
-            mangle: true,
-            compress: {
-                warnings: false
+        new UglifyJsPlugin({
+            uglifyOptions: {
+                warnings: false,
+                ie8: false,
+                output: {
+                    comments: false
+                }
             }
         })
     ]
@@ -58,3 +77,18 @@ module.exports = [
         }
     })
 ];
+
+
+if (process.env.NODE_ENV === 'production') {
+    // http://vue-loader.vuejs.org/en/workflow/production.html
+    module.exports.plugins = (module.exports.plugins || []).concat([
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: '"production"'
+        }
+      }),
+      new webpack.LoaderOptionsPlugin({
+        minimize: true
+      })
+    ])
+  }
