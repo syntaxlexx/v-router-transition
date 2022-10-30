@@ -11,7 +11,7 @@ If you've found this useful and would like to buy the maintainers a coffee (or a
 
 <a href="https://ko-fi.com/acelords" target="_blank" title="Buy me a Coffee"><img width="150" style="border:0px;width:150px;display:block;margin:0 auto" src="https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0" border="0" alt="Buy Me a Coffee at ko-fi.com" /></a>
 
-Or by buying products and merchandise at [Marketplace](https://store.acelords.space).
+Or by buying products and merchandise at [Marketplace](https://store.acelords.com).
 
 This funding is used for maintaining the project and adding new features into Code Style plus other open-source repositories.
 
