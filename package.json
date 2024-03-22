@@ -59,7 +59,7 @@
     "vue-template-compiler": "^2.6.8",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^5.0.4"
   },
   "main": "dist/v-router-transition.js",
   "scripts": {
